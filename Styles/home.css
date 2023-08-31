@@ -43,7 +43,7 @@ body{
 }
 
 .logo{
- width: 100px;
+ width: 280px;
 }
 
 .contenedor-links-ul-li{
@@ -69,5 +69,22 @@ body{
 .contenedor-registro-ul-li-a{
     list-style: none;
     padding: 15px;
+}
+
+.contenido-general{
+    text-align: center;
+    margin: 100px;
+}
+.titulo-principal{
+text-align: center;
+font-size: 2rem;
+color: #72178a;
+font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.titulo-catalogo{
+    font-family: 'Press Start 2P', cursive;
+    color:aqua;
 }
 
