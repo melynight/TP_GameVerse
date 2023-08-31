@@ -20,6 +20,7 @@ body{
     text-decoration: none;
     background: #210736;
     color: #fff;
+    transition: background 1s;
 }
 
 .contenedor-links-ul-li-a:hover{
@@ -37,22 +38,28 @@ body{
 
 .contenedor-links{
     display: flex;
-    align-items: center;
+    flex-grow: 1;
+    justify-content: left;
+}
+
+.logo{
+ width: 100px;
 }
 
 .contenedor-links-ul-li{
     list-style: none;
-    background-color: aqua;
 }
 
 .contenedor-links-ul-li-a{
     list-style: none;
     padding: 15px;
-    background-color: rgb(149, 202, 26);
+    background-color: #210736;
 }
 
 .contenedor-registro{
     display: flex;
+    flex-grow: 1;
+    justify-content: right;
 }
 
 .contenedor-registro-ul-li{
@@ -63,3 +70,4 @@ body{
     list-style: none;
     padding: 15px;
 }
+
