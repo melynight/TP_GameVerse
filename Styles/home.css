@@ -1,90 +1,267 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
-    background: #210736;
+    background-image: url("/Images/Back-Rain-Pixeles.jpg");
 }
 
-.contenedor-navBar{
+
+/*-------------Variables-------------*/
+a {
+    --enlaces--: #add;
+}
+
+h1 {
+    --titulo_principal--: #fff;
+    --titulo_catalogo--: #ff4aab;
+}
+
+h2 {
+    --subtitulo_catalogo--: #5654d3;
+}
+
+:hover {
+    --hover_enlaces--: #5654d3;
+    ;
+}
+
+/*-------------------Header--------------------*/
+.contenedor-navBar {
     width: 90%;
-    margin: 0 auto;
     display: flex;
-    padding: 5px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
+.contenedor-links {
+    display: flex;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-.contenedor-links-ul-li-a,.contenedor-registro-ul-li-a{
+.contenedor-img {
+    width: 200px;
+    text-align: center;
+    flex-grow: 1;
+
+}
+
+.contenedor-img .logo {
+    width: 200px;
+
+}
+
+.contenedor-registro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-grow: 1;
+    justify-content: end
+}
+
+.contenedor-links-ul-li,
+.contenedor-registro-ul-li {
+    list-style: none;
+}
+
+.contenedor-links-ul-li-a,
+.contenedor-registro-ul-li-a {
+    padding: 15px;
     text-decoration: none;
-    background: #210736;
-    color: #fff;
+    color: var(--enlaces--);
+    font-size: 1.2em;
     transition: background 1s;
 }
 
-.contenedor-links-ul-li-a:hover{
-    background: #0f9;
-    outline: none;
-    border: none
-    
-}
-
-.contenedor-registro-ul-li-a:hover{
-    background: #72178a;
+.contenedor-links-ul-li-a:hover {
+    background: var(--hover_enlaces--);
     outline: none;
     border: none
 }
 
-.contenedor-links{
-    display: flex;
-    flex-grow: 1;
-    justify-content: left;
+.contenedor-registro-ul-li-a:hover {
+    background: var(--hover_enlaces--);
+    outline: none;
+    border: none
 }
 
-.logo{
- width: 280px;
-}
+/*----------Section-Contenido-general----------------*/
 
-.contenedor-links-ul-li{
-    list-style: none;
-}
-
-.contenedor-links-ul-li-a{
-    list-style: none;
-    padding: 15px;
-    background-color: #210736;
-}
-
-.contenedor-registro{
-    display: flex;
-    flex-grow: 1;
-    justify-content: right;
-}
-
-.contenedor-registro-ul-li{
-    list-style: none;
-}
-
-.contenedor-registro-ul-li-a{
-    list-style: none;
-    padding: 15px;
-}
-
-.contenido-general{
-    text-align: center;
+.contenido-general {
     margin: 100px;
-}
-.titulo-principal{
-text-align: center;
-font-size: 2rem;
-color: #72178a;
-font-family: 'Bebas Neue', sans-serif;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /*Me pone la imagen y el texto al lado podria ser una transicion de imagenes*/
 }
 
-.titulo-catalogo{
+.contenido-general .banner {
+    width: 700px;
+    margin-right: 20px;
+}
+
+.titulo-principal {
+    text-align: center;
+    width: 600px;
+    font-size: 3em;
+    color: var(--titulo_principal--);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*------------Section-Contenido-Catalogo--------------*/
+
+.contenido-catalogo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo-catalogo {
     font-family: 'Press Start 2P', cursive;
-    color:aqua;
+    color: var(--titulo_catalogo--);
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin-top: 0;
 }
 
+.subtitulo-contenedores {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--subtitulo_catalogo--);
+    font-size: 2em;
+    text-align: left;
+    margin-left: 55px;
+    animation: flashingTitulo 2s ease alternate infinite;
+}
+
+.contenedor-estrenos,
+.contenedor-recomendados,
+.contenedor-ofertas {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-compra {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.portada {
+    width: 100%;
+}
+
+.btn-comprar {
+    padding: 15px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.btn-comprar:hover {
+    background-color: var(--hover_enlaces--);
+    font-size: 0.75rem;
+}
+
+.nombre-juego {
+    background: #888;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    padding: 10px;
+
+}
+
+/*Footer*/
+
+footer {
+    margin-top: 30px;
+    background-color: #210736;
+    height: 100%;
+}
+
+.contenedor-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-redes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-redes-titulo {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+    color: #ff4aab;
+}
+
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    margin: 30px 10px;
+    width: 50px;
+}
+
+hr {
+    background-color: #5654d3;
+    height: 1px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.contenedor-derechos {
+    display: flex;
+    align-items: center;
+}
+
+.img-footer {
+    width: 200px;
+}
+
+.p-footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff4aab;
+}
+
+
+/*----------Animaciones----------*/
+
+
+@keyframes flashingTitulo {
+    0% {
+        color: #5654d3;
+    }
+
+    50% {
+        color: #5654d3;
+    }
+
+    75% {
+        color: #ff4aab;
+    }
+
+    100% {
+        color: #ff4aab;
+    }
+}
+
+/*Media QUeries*/
+/*965 menu hamburguesa
+*/
