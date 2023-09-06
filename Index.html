@@ -12,18 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="body">
     <header>
         <nav class="contenedor-navBar">
             <ul class="contenedor-links">
                 <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Home</a></li>
-                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Nosotros</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/contacto.html">
+                        Nosotros</a></li>
                 <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Contacto</a></li>
                 <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Streming</a></li>
             </ul>
-            <div class="contenedor-img">
+            <div class="contenedor-img animate__animated animate__pulse">
                 <img class="logo" src="/Images/LogoPrincipal.png ">
             </div>
             <ul class="contenedor-registro">
@@ -32,12 +34,30 @@
                 <li class="contenedor-registro-ul-li"> <a class="contenedor-registro-ul-li-a" href="">Login</a></li>
             </ul>
         </nav>
+        <nav class="navbar-responsive">
+            <div class="menu-responsive">
+                <img class="foto-menu" src="/Images/menu.png" alt="">
+            </div>
+            <div class="lateral-menu">
+                <ul class="contenedor-links">
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Home</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a"
+                            href="/contacto.html">Nosotros</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Contacto</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Streming</a></li>
+                </ul>
+            </div>
+            <div class="contenedor-img-responsive">
+                <img class="logo" src="/Images/LogoPrincipal.png ">
+            </div>
+        </nav>
     </header>
-
     <section>
         <div class="contenido-general">
-            <img class="banner" src="/Images/gta.jpg" alt="banner">
-            <h1 class="titulo-principal"> Somos la mejor plataforma de juegos.<br>
+            <div class="contenedor-banner">
+                <img class="banner1 animate__animated animate__fadeIn" src="/Images/gta.jpg" alt="banner">
+            </div>
+            <h1 class="titulo-principal animate__fadeInLeft"> Somos la mejor plataforma de juegos.<br>
                 ¡Encontrá tus juegos favoritos acá!
             </h1>
         </div>
@@ -127,6 +147,7 @@
             <hr>
         </div>
     </footer>
+    <script src="/script/home.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
     background-image: url("/Images/Back-Rain-Pixeles.jpg");
+    transition: opacity 1s ease;
 }
 
 
@@ -26,6 +27,11 @@ h2 {
 }
 
 /*-------------------Header--------------------*/
+
+.navbar-responsive {
+    display: none;
+}
+
 .contenedor-navBar {
     width: 90%;
     display: flex;
@@ -93,24 +99,24 @@ h2 {
 .contenido-general {
     margin: 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-content: center;
     align-items: center;
     flex-wrap: wrap;
     /*Me pone la imagen y el texto al lado podria ser una transicion de imagenes*/
 }
 
-.contenido-general .banner {
-    width: 700px;
-    margin-right: 20px;
+.banner1 {
+    width: 100%;
 }
 
 .titulo-principal {
     text-align: center;
-    width: 600px;
     font-size: 3em;
     color: var(--titulo_principal--);
     font-family: 'Bebas Neue', sans-serif;
 }
+
 
 /*------------Section-Contenido-Catalogo--------------*/
 
@@ -265,3 +271,58 @@ hr {
 /*Media QUeries*/
 /*965 menu hamburguesa
 */
+
+@media screen and (max-width: 965px) {
+
+    .contenedor-navBar {
+        display: none;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu-responsive {
+        width: 70px;
+        margin-top: 20px;
+        margin-left: 10px;
+        top: 3px;
+
+    }
+
+    .foto-menu {
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    .contenedor-img-responsive {
+        width: 200px;
+        margin: auto;
+    }
+
+    .contenedor-img-responsive .logo {
+        width: 100%;
+    }
+
+    .lateral-menu {
+        position: absolute;
+        background-color: #444;
+        left: -200px;
+        transition: left 2s ease;
+        z-index: 10;
+    }
+
+    .contenedor-links {
+        flex-direction: column;
+        height: fit-content;
+        width: 150px;
+    }
+
+    .contenedor-links-ul-li-a {
+        display: block;
+    }
+
+}
