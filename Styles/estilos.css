@@ -5,13 +5,14 @@ body{
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
     min-height: 100vh;
     width: 100%;
-    display: flex;
+    
     font-family: 'Press Start 2P', cursive;
     position: relative;
     padding-bottom: 4em; 
+    margin: 20px;
 }
 
-#TRUCAZO {
+#CAMBIO1 {
     opacity: 0;
 }
 .form_container {
@@ -40,7 +41,7 @@ body{
     padding: 12.8px 16px;
     outline: purple transparent;
     border: pink solid; 
-
+    margin-top: 20px;
     border-radius: 3.2px;
 }
 .form_enviar {
@@ -49,11 +50,17 @@ background-color:#453a94;
 color: #fff;
 border: none;
 font-weight: 300;
-padding: 11.2px 0;
+text-align: center;
+text-indent: 0%;
+padding: 11.2px 10px 10px;
 border-radius: 3.2px;
 cursor: pointer;
 font-weight: 400;
+margin-top: 20px;
+
+
 }   
+
 .form{
     background-color:#fff;
     width: 90%;
@@ -63,65 +70,63 @@ font-weight: 400;
     padding: 56px 24px;
 }    
 
-footer {
-    font-size: 10px;
-    background-color: #210736;
-    padding: 1em 0;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
+.container-footer {
     width: 100%;
+    padding: 40px 0;
+    background: #fff;
+    margin-top: 40px;
+    
 }
 
-.contenedor-footer {
-    width: 90%;
-    margin: 0 auto;
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
 }
 
-.contenedor-redes {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.container-footer footer .logo-footer {
+    text-align: center;
+
 }
 
-.contenedor-redes-titulo {
-    font-family: 'Press Start 2P', cursive;
-    margin-top: 30px;
-    color: #ff4aab;
+.container-footer footer .logo-footer img {
+    width: 100px;
+
 }
 
-.contenedor-logos {
+.container-footer footer .redes-footer {
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 
-.logos {
-    margin: 30px 10px;
-    width: 50px;
-}
-
-hr {
-    background-color: #5654d3;
-    height: 1px;
-    border: none;
-    margin-bottom: 0;
-}
-
-.contenedor-derechos {
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 20px;
+    height: 20px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    border-radius: 100%; 
+    color: #a2a2a2;
+
 }
 
-.img-footer {
-    width: 200px;
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #7028e4;
 }
 
-.p-footer {
-    font-family: 'Bebas Neue', sans-serif;
-    color: #ff4aab;
+.container-footer h4 {
+    text-align: center;
+    margin-top: 20px;
+    color: #453a94;
+    font-weight: 500px;
+    font-size: 10px;
 }
-
 
 
 
