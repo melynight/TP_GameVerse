@@ -92,9 +92,7 @@ const focusIn = () => {
             inputs[i].style.backgroundColor = "#555";
             inputs[i].style.color = "#fff";
             inputs[i].style.outline = "none";
-            inputs[i].style.borderBottom = "2px solid #0f7";
-            inputs[i].style.boxSizing = "border-box";
-
+            inputs[i].style.borderBottom = "2px solid #e5b2ca";
         })
 }
 
@@ -107,7 +105,6 @@ const focusOut = () => {
             inputs[i].style.border = "none";
             inputs[i].style.magin = "10px 10px";
             inputs[i].style.padding = "10px";
-            inputs[i].style.boxSizing = "border-box";
         })
 }
 
