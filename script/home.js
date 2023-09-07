@@ -13,6 +13,7 @@ logoResponsive.addEventListener('click', (e) => {
 document.addEventListener('click', (e) => {
     if (e.target != div) {
         div.style.left = '-200px';
+        body.style.opacity = "1";
     }
 });
 

@@ -11,9 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
         rel="stylesheet">
-        <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Document</title>
 </head>
 
@@ -36,39 +34,46 @@
             </ul>
         </nav>
         <div class="contenedor-formulario">
-            <form class="formulario" >
+            <form class="formulario">
                 <h1>Formulario de contacto</h1>
-                <input type="text"  class="input" id="nombre" placeholder="Nombre"  value="" tabindex="1" required>
-                <input type="text" class="input" id="apellido" placeholder="Apellido"  tabindex="2">
-                <input type="email" class="input" id="email" placeholder="Email"  tabindex="3">
-                <textarea id="comentarios" tabindex="4" placeholder="Escribe aqui tu comentario" cols="10" rows="10" required></textarea>
+                <input type="text" class="input" id="nombre" placeholder="Nombre" value="" tabindex="1" required>
+                <input type="text" class="input" id="apellido" placeholder="Apellido" tabindex="2">
+                <input type="email" class="input" id="email" placeholder="Email" tabindex="3">
+                <textarea id="comentarios" tabindex="4" placeholder="Escribe aqui tu comentario" cols="10" rows="10"
+                    required></textarea>
                 <input type="submit" id="enviar">
             </form>
         </div>
         <div class="comentarios"></div>
-        <footer>
-            <div class="contenedor-footer">
-                <div class="contenedor-redes">
-                    <h2 class="contenedor-redes-titulo">Seguinos en nuestras redes sociales</h2>
-                    <div class="contenedor-logos">
-                        <a href=""><img class="logos" src="/Images/facebook-logo.png" alt="Facebook-log"> </a>
-                        <a href=""><img class="logos" src="/Images/instagram-logo.png" alt="Instagram-logo"></a>
-                        <a href=""><img class="logos" src="/Images/twitch-logo.png" alt="Twitch-logo"></a>
-                    </div>
-                </div>
-                <hr>
-                <div class="contenedor-derechos">
-                    <img class="img-footer" src="/Images/LogoPrincipal.png" alt="">
-                    <p class="p-footer">© 2023 Valve Corporation. All rights reserved. All trademarks are property of their
-                        respective
-                        owners in the US and other countries.
-                        VAT included in all prices where applicable. Privacy Policy | Legal | Steam Subscriber Agreement
-                        | Refunds | Cookies
-                    </p>
-                </div>
-                <hr>
-            </div>
+
+        </div>
         <script src="/script/IndexDB.js"></script>
 </body>
-
+<footer>
+    <div class="contenedor-footer">
+        <div class="contenedor-redes">
+            <h2 class="contenedor-redes-titulo">Seguinos en nuestras redes sociales</h2>
+            <div class="contenedor-logos">
+                <a href=""><img class="logos" src="/Images/facebook-logo.png" alt="Facebook-log"> </a>
+                <a href=""><img class="logos" src="/Images/instagram-logo.png" alt="Instagram-logo"></a>
+                <a href=""><img class="logos" src="/Images/twitch-logo.png" alt="Twitch-logo"></a>
+            </div>
+        </div>
+        <hr>
+        <div class="contenedor-derechos">
+            <div class="contenedor-img-derechos"> 
+                <img class="img-footer" src="/Images/LogoPrincipal.png" alt="">
+            </div>
+            <div class="contenedor-parrafo-derechos">
+                <p class="p-footer">© 2023 Valve Corporation. All rights reserved. All trademarks are property of their
+                    respective
+                    owners in the US and other countries.
+                    VAT included in all prices where applicable. Privacy Policy | Legal | Steam Subscriber Agreement
+                    | Refunds | Cookies
+                </p>
+            </div>
+        </div>
+        <hr>
+    </div>
+</footer>
 </html>
