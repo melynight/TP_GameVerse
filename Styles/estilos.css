@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+body{
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    padding-bottom: 4em; 
+}
+
+#TRUCAZO {
+    opacity: 0;
+}
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-auto-columns: 100%;
+}
+
+.form_title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    font-size: 30,4px;
+    margin-bottom: 6.4px;
+}  
+.form_input--message{
+    resize: none;
+    padding: 28.8px 16px;
+    margin-bottom: 24px;
+}  
+
+.form_input{
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12.8px 16px;
+    outline: purple transparent;
+    border: pink solid; 
+
+    border-radius: 3.2px;
+}
+.form_enviar {
+font-family: inherit;
+background-color:#453a94;
+color: #fff;
+border: none;
+font-weight: 300;
+padding: 11.2px 0;
+border-radius: 3.2px;
+cursor: pointer;
+font-weight: 400;
+}   
+.form{
+    background-color:#fff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 56px 24px;
+}    
+
+footer {
+    font-size: 10px;
+    background-color: #210736;
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.contenedor-footer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-redes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-redes-titulo {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+    color: #ff4aab;
+}
+
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    margin: 30px 10px;
+    width: 50px;
+}
+
+hr {
+    background-color: #5654d3;
+    height: 1px;
+    border: none;
+    margin-bottom: 0;
+}
+
+.contenedor-derechos {
+    display: flex;
+    align-items: center;
+}
+
+.img-footer {
+    width: 200px;
+}
+
+.p-footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff4aab;
+}
+
+
+
+
+@media (max-width:450px) { #si llega a haber otro tipo de pestaña
+    .form{
+    padding: 56px 16px;} 
+} 

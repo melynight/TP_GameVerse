@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="/Styles/estilos.css">
+</head>
+<body>
+   
+    <form id="form" action="" class="form">
+    <div class="form_container">
+        
+        <h2 class="form_title">Contactanos</h2>
+        <input name="nombre" id="name" type="text" class="form_input" placeholder="nombre:">
+        <input name="email" id="email" type="email" class="form_input" placeholder="email:">
+    <textarea id="message" name="message" class="form_input form_imput--message" placeholder="mensaje"></textarea>
+    <input type="submit" value="Enviar" class="form_enviar">
+</form>
+<a href="mailto:isabelagarciacasso@gmail.com" id="TRUCAZO">Mail</a>
+</div>
+    
+
+
+<script>
+    const $form = document.querySelector('#form')
+    const $buttonMailto = document.querySelector('#TRUCAZO')
+
+    $form.addEventListener('submit', handleSubmit)
+
+    function handleSubmit(event) {
+    event.preventDefault(); 
+    const form = new FormData(this)
+    console.log(form.get('name'))
+    $buttonMailto.setAttribute('href',`mailto:isabelagarciacasso@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+    $buttonMailto.click()
+    }
+
+</script>
+</body>
+
+</html>
+
