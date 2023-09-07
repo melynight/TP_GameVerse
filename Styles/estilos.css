@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+body{
+    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    min-height: 100vh;
+    width: 100%;
+    
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    padding-bottom: 4em; 
+    margin: 20px;
+}
+
+#CAMBIO1 {
+    opacity: 0;
+}
+.form_container {
+    width: 100%;
+    display: grid;
+    gap: 16px;
+    grid-auto-columns: 100%;
+}
+
+.form_title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    font-size: 30,4px;
+    margin-bottom: 6.4px;
+}  
+.form_input--message{
+    resize: none;
+    padding: 28.8px 16px;
+    margin-bottom: 24px;
+}  
+
+.form_input{
+    font-family: inherit;
+    font-size: 16px;
+    padding: 12.8px 16px;
+    outline: purple transparent;
+    border: pink solid; 
+    margin-top: 20px;
+    border-radius: 3.2px;
+}
+.form_enviar {
+font-family: inherit;
+background-color:#453a94;
+color: #fff;
+border: none;
+font-weight: 300;
+text-align: center;
+text-indent: 0%;
+padding: 11.2px 10px 10px;
+border-radius: 3.2px;
+cursor: pointer;
+font-weight: 400;
+margin-top: 20px;
+
+
+}   
+
+.form{
+    background-color:#fff;
+    width: 90%;
+    margin: auto;
+    max-width: 400px;
+    border-radius: 16px;
+    padding: 56px 24px;
+}    
+
+.container-footer {
+    width: 100%;
+    padding: 40px 0;
+    background: #fff;
+    margin-top: 40px;
+    
+}
+
+.container-footer footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-footer footer .logo-footer {
+    text-align: center;
+
+}
+
+.container-footer footer .logo-footer img {
+    width: 100px;
+
+}
+
+.container-footer footer .redes-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%; 
+    color: #a2a2a2;
+
+}
+
+.container-footer footer hr {
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: #7028e4;
+}
+
+.container-footer h4 {
+    text-align: center;
+    margin-top: 20px;
+    color: #453a94;
+    font-weight: 500px;
+    font-size: 10px;
+}
+
+
+
+@media (max-width:450px) { #si llega a haber otro tipo de pestaña
+    .form{
+    padding: 56px 16px;} 
+} 
