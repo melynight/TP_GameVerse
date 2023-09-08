@@ -3,8 +3,11 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
+
+/* color violeta oscuro para form #240046*/
+
+
 .contenedor-formulario {
-    background-color: #aaa;
     width: 60%; 
     margin: 0 auto;
 }
