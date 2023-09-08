@@ -1,0 +1,46 @@
+body {
+    background-image: linear-gradient(to top, #e5b2ca 0%, #47028e 100%);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.contenedor-about-us{
+    display: flex;
+    width: 100%;
+    margin: 7rem 0 11rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.info{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    flex-direction: column;
+    height: 400px;
+    background: white;
+}
+
+
+.info-img{
+    position: relative;
+    width: 100px;
+    top: -50px;
+    text-align: center;
+}
+
+.info-texto{
+    width: 50%;
+    background: violet;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.info img{
+    position: relative;
+    width: 100px;
+    border-radius: 50%;
+}
