@@ -30,7 +30,6 @@ body{
     margin-bottom: 6.4px;
 }  
 .form_input--message{
-    resize: none;
     padding: 28.8px 16px;
     margin-bottom: 24px;
 }  
@@ -130,7 +129,7 @@ margin-top: 20px;
 
 
 
-@media (max-width:450px) { #si llega a haber otro tipo de pestaña
+/* @media (max-width:450px) { #si llega a haber otro tipo de pestaña
     .form{
     padding: 56px 16px;} 
-} 
+}  */
