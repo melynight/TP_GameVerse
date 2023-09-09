@@ -7,24 +7,79 @@
     <link rel="stylesheet" href="/Styles/estilos.css">
 </head>
 <body>
-   
-<section>
-    <div class="form_container">
-        <form id="form" action="" class="form">
-        <h2 class="form_title">Contactanos</h2>
-        <input name="nombre" id="name" type="text" class="form_input" placeholder="nombre:">
-        <input name="email" id="email" type="email" class="form_input" placeholder="email:">
-    <textarea id="message" name="message" class="form_input form_imput--message" placeholder="mensaje"></textarea>
-    <input type="submit" value="Enviar" class="form_enviar">
-</form>
-<a href="mailto:isabelagarciacasso@gmail.com" id="CAMBIO1">Mail</a>
-</div>
+    <header>
+        <nav class="contenedor-navBar">
+            <ul class="contenedor-links">
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Index.html"> Home</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="">
+                        Nosotros</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/contacto.html"> Contacto</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/Streaming.html">
+                        Streaming</a></li>
+            </ul>
+            <div class="contenedor-img animate__animated animate__pulse">
+                <img class="logo" src="/Images/LogoPrincipal.png ">
+            </div>
+            <ul class="contenedor-registro">
+                <li class="contenedor-registro-ul-li"> <a class="contenedor-registro-ul-li-a" href="">Registrarse</a>
+                </li>
+                <li class="contenedor-registro-ul-li"> <a class="contenedor-registro-ul-li-a" href="">Login</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar-responsive">
+            <div class="menu-responsive">
+                <img class="foto-menu" src="/Images/menu.png" alt="">
+            </div>
+            <div class="lateral-menu">
+                <ul class="contenedor-links">
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Home</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a"
+                            href="/contacto.html">Nosotros</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Contacto</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Streaming.html">
+                            Streaming</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+    </header>
+<section class="form-caja"> 
+    <section class="contact_info">
+        <section class="info_title">
+        
+            <h2>INFORMACION <br> DE CONTACTO </h2>
+        </section>
+        <section class="info_items">
+            <p><a class="CAMBIO1" href="mailto:info@gameverse.com">info@gameverse.com</a></p>
+            <p class="TELEFONO_CONTACTO">+54 911 566666</p>  
+        </section>
+    </section>
+
+    <form action="" class="form_contact">
+        <h2 class="form_title">Dejanos Tu mensaje</h2>
+        <div class="user_info">
+
+            <label for="name">Nombre</label>
+            <input name="nombre" id="name" type="text" class="form_input" >
+        
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" class="form_input" >
+    
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" class="form_input form_imput--message" ></textarea>
+    
+            <input type="submit" value="Enviar" class="form_enviar">
+        </div>
+    </form>
+    
+    </div>
 </section>
+
 <section>
 <div class="container-footer">
 <footer>
     <div class="logo-footer">
-    <img class="img-footer" src="/Images/LogoPrincipal.png" alt="GameVerse Logo">
+    <img class="img-footer" src="/Images/Lgameverse.png" alt="GameVerse Logo">
     </div>
     <div class="redes-footer">
         <a href=""><img class="icon-redes-footer" src="/Images/facebook-logo.png" alt="Facebook-log"> </a>
@@ -34,11 +89,7 @@
      
     </div>
 <hr>
-<h4> © 2023 Valve Corporation. All rights reserved. All trademarks are property of their
-                    respective
-                    owners in the US and other countries.
-                    VAT included in all prices where applicable. Privacy Policy | Legal | Steam Subscriber Agreement
-                    | Refunds | Cookies</h4>
+<h4> © 2023 GameVerse S.A.  All rights reserved. Please follow our legal data privacy.</h4>
 
 </footer>
 </section>
@@ -46,22 +97,7 @@
     
 
 
-<script>
-    const $form = document.querySelector('#form')
-    const $buttonMailto = document.querySelector('#TRUCAZO')
 
-    $form.addEventListener('submit', handleSubmit)
-
-    function handleSubmit(event) {
-    event.preventDefault(); 
-    const form = new FormData(this)
-    console.log(form.get('name'))
-    $buttonMailto.setAttribute('href',`mailto:isabelagarciacasso@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-    $buttonMailto.click()
-    }
-
-</script>
 </body>
 
 </html>
-
