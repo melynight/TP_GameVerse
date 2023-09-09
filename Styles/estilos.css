@@ -1,79 +1,214 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
 
+/*nav bar */
+.navbar-responsive {
+    display: none;
+}
+
+.contenedor-navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor-links {
+    width: 42%;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+.contenedor-img {
+    width: 16%;
+
+}
+
+.contenedor-img .logo {
+    width: 100%;
+
+}
+
+.contenedor-registro {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+    width: 42%;
+}
+
+.contenedor-links-ul-li,
+.contenedor-registro-ul-li {
+    list-style: none;
+}
+
+.contenedor-links-ul-li-a,
+.contenedor-registro-ul-li-a {
+    padding: 15px;
+    text-decoration: none;
+    color: var(--enlaces--);
+    font-size: 1.2em;
+    transition: background 1s;
+}
+
+.contenedor-links-ul-li-a:hover {
+    background: var(--hover_enlaces--);
+    outline: none;
+    border: none
+}
+
+.contenedor-registro-ul-li-a:hover {
+    background: var(--hover_enlaces--);
+    outline: none;
+    border: none
+}
+
+/*fin del navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+    
     min-height: 100vh;
     width: 100%;
-    
     font-family: 'Press Start 2P', cursive;
     position: relative;
-    padding-bottom: 4em; 
-    margin: 20px;
+        
 }
 
-#CAMBIO1 {
-    opacity: 0;
+.CAMBIO1{ color: #fff; } /* CSS link*/
+.CAMBIO1:hover { color: #e5b2ca; } /* CSS link */
+
+
+:focus{  /*esto hace que las columnas de envio no se vean*/
+    outline: none;
+
 }
-.form_container {
-    width: 100%;
-    display: grid;
-    gap: 16px;
-    grid-auto-columns: 100%;
-}
-
-.form_title{
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 80px;
-    text-align: center;
-    font-size: 30,4px;
-    margin-bottom: 6.4px;
-}  
-.form_input--message{
-    padding: 28.8px 16px;
-    margin-bottom: 24px;
-}  
-
-.form_input{
-    font-family: inherit;
-    font-size: 16px;
-    padding: 12.8px 16px;
-    outline: purple transparent;
-    border: pink solid; 
-    margin-top: 20px;
-    border-radius: 3.2px;
-}
-.form_enviar {
-font-family: inherit;
-background-color:#453a94;
-color: #fff;
-border: none;
-font-weight: 300;
-text-align: center;
-text-indent: 0%;
-padding: 11.2px 10px 10px;
-border-radius: 3.2px;
-cursor: pointer;
-font-weight: 400;
-margin-top: 20px;
-
-
-}   
-
-.form{
-    background-color:#fff;
-    width: 90%;
-    margin: auto;
-    max-width: 400px;
+.form-caja{
+    width: 65.75em;
+    height: 33.12em;
+    margin: 50px auto;
+    display: flex;
+    background: #fff;
     border-radius: 16px;
-    padding: 56px 24px;
-}    
+    overflow: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    
+}
+
+.contact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #453a94;
+    opacity: 0.9;
+
+}
+
+.contact_info{
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(/Images/pistolero1.jpg); 
+    background-size: cover;   
+    background-position: center center; /*centrar la imagen del pistolero */
+}
+
+.info_title, .info_items {
+    position: relative;
+    z-index: 2;  /*si no ponia esto se veian debajo las palabras*/
+    color:#fff;
+}
+
+.info_title{
+    margin-bottom: 10px;
+}
+
+.TELEFONO_CONTACTO{
+    margin-top: 20px;
+}
+form.form_contact{
+    width: 62%;
+    padding: 60px 50px 10px ;
+
+}
+
+form.form_contact h2{
+    font-weight: 600;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 65px;
+    margin-bottom: 60px;
+    
+    
+}
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+form.form_contact label{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+form.form_contact input {
+    width: 100%;
+
+    
+    border: none;
+    border-bottom: 2px solid #e5b2ca;
+    margin-bottom: 20px;
+    padding:  8px 0px 5px;
+
+    font-family: 'Press Start 2P', cursive;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea  {
+    padding: 0.8px 1px 5px;
+    margin-bottom: 10px;
+    
+    font-family: 'Press Start 2P', cursive;
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+    
+    
+    border:2px solid #e5b2ca; 
+    
+}
+
+
+
+
+
+  
+/*FOOTERRRRR*/
 
 .container-footer {
     width: 100%;
     padding: 40px 0;
     background: #fff;
     margin-top: 40px;
+    display: flex;
     
 }
 
@@ -127,9 +262,167 @@ margin-top: 20px;
     font-size: 10px;
 }
 
+/*@media(max-width:1200)
+@media(max-width:1200)
+@media(max-width:1200)
+@media(max-width:1200)]*/
+
+@media (max-width:576px) { 
+    .contenedor-navBar {
+        display: none;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .menu-responsive {
+        width: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        top: 3px;
+
+    }
+
+    .foto-menu {
+        width: 100%;
+        cursor: pointer;
+
+    }
+
+    .titulo-principal {
+        font-size: 2em;
+    }
+
+    .titulo-catalogo {
+        font-size: 1.8em;
+    }
+
+    .subtitulo-contenedores {
+        text-align: center;
+        margin: 100px auto;
+        font-size: 1.7em;
+    }
+
+    .contenedor-img-responsive {
+        width: 200px;
+        margin: auto;
+    }
+
+    .contenedor-img-responsive .logo {
+        width: 100%;
+    }
+
+    .lateral-menu {
+        position: absolute;
+        background-color: #777;
+        height: 500px;
+        left: -200px;
+        transition: left 2s ease;
+        z-index: 10;
+    }
+
+    .lateral-menu:hover {
+        opacity: 1;
+    }
+
+    .contenedor-links {
+        flex-direction: column;
+        height: fit-content;
+        width: 150px;
+    }
+
+    .contenedor-links-ul-li-a {
+        display: block;
+    }
+    
+ /*esto es lo otro que no es el menu hamburguesa copiado de juan*/
+
+    .body{
+        width: 50%;
+        min-height: 450px;
+    }
+    
+    .contact_info {
+
+    font-size: 8px;
+    width: 100%;
+    position: relative;
+    height: 30%;
+
+    
+    
+
+    background-image: url(/Images/pistolero1.jpg); 
+    background-size: cover;   
+    background-position: center; /*centrar la imagen del pistolero */}
+
+    .form_contact{
+        width: 100%;
+        
+    }
+
+    .form-caja{
+        
+        width: 100%;
+        height: 35em;
+        margin:  auto;
+        display: block;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        
+    }
 
 
-/* @media (max-width:450px) { #si llega a haber otro tipo de pestaña
-    .form{
-    padding: 56px 16px;} 
-}  */
+
+    form.form_contact h2{
+      
+        width: 100%;
+        position: relative;
+        
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    form.form_contact label{
+            font-size: 10px;
+            margin-bottom: 10px;
+    }
+        
+    form.form_contact input {
+            width: 100%;
+            font-size: 8px;
+            
+    }
+        
+    form.form_contact textarea  {
+            
+            font-size: 8px;
+            
+            
+    }    
+    .container-footer {
+        
+        background:transparent ;
+        
+        
+    }
+
+    .redes-footer{
+        background: #fff;
+    }
+
+    .container-footer h4 {
+        
+        color: #fff;
+        font-size: 10px;
+        
+    }
+
+    
+}
