@@ -30,7 +30,12 @@ body {
     font-size: 1.9rem;
     font-family: 'Bebas Neue', sans-serif;
     animation: flashingTitulo 2s ease alternate infinite;
+    padding-top: 10px;
 
+}
+
+.video-1{
+    border: 2px;
 }
 
 
