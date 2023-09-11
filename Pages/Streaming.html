@@ -68,58 +68,49 @@
 
    </div>
 
-   <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        <div class="video-1">
-            <iframe width="320" height="350" src="https://www.youtube.com/embed/Uy_hS8TDeMI?si=vFQ9g5LKuJPkpSxN"
-           title="Top 50 fortnite" frameborder="1" autoplay="0" clipboard-write; 
-           encrypted-media; gyroscope; web-share allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col">
-        <div class="video-2">
-            <iframe width="320" height="350" src="https://www.youtube.com/embed/vlvj2jCLml8?si=OdmZ3TRZjIpa-efQ" 
-            title="YouTube video player" frameborder="1" autoplay="0" clipboard-write; 
-            encrypted-media; gyroscope; web-share allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col">
-        <iframe width="320" height="350" src="https://www.youtube.com/embed/cAJRlms9R3Q?si=dSL2YL7f-tYMrIzt"
-         title="YouTube video player" frameborder="1" autoplay="0" clipboard-write; 
-         encrypted-media; gyroscope; web-share allowfullscreen></iframe>
-      </div>
-    </div>
+
+   
+
+   <div class="contenedor-streams">
+
+    <div class="contenedor-canales-recomendados">
+
+      <h1 class="titulo-canales"> Canales recomendados </h1>
+  
+      <a href="https://www.twitch.tv/eslcs" target="_blank">
+  
+          <img src="/Images/canal1.JPG" alt="canal recomendado 1"> 
+      </a>
+      <a href="https://www.twitch.tv/jujalag" target="_blank">
+  
+          <img src="/Images/canal2.JPG" alt="canal recomendado 2"> 
+      </a>
+      
+      <a href="https://www.twitch.tv/poker988hd" target="_blank">
+          <img src="/Images/canal3.JPG" alt="canal recomendado 3">
+      </a>
+      <a href="https://www.twitch.tv/newgameplusok" target="_blank">
+          <img src="/Images/canal4.JPG" alt="canal recomendado 4"> 
+      </a>
+      <a href="https://www.twitch.tv/zackrawrr" target="_blank">
+  
+          <img src="/Images/canal5.JPG" alt="canal recomendado 5" > 
+      </a>
+      
+     </div>
+
+    <div id="video"></div>
+    <div id="video-2"></div>
+    <div id="video-3"></div>
+    <div id="video-4"></div>
+   
+
   </div>
    
 
   
 
-   <div class="contenedor-canales-recomendados">
-
-    <h1 class="titulo-canales"> Canales recomendados </h1>
-
-    <a href="https://www.twitch.tv/eslcs" target="_blank">
-
-        <img src="/Images/canal1.JPG" alt="canal recomendado 1"> 
-    </a>
-    <a href="https://www.twitch.tv/jujalag" target="_blank">
-
-        <img src="/Images/canal2.JPG" alt="canal recomendado 2"> 
-    </a>
-    
-    <a href="https://www.twitch.tv/poker988hd" target="_blank">
-        <img src="/Images/canal3.JPG" alt="canal recomendado 3">
-    </a>
-    <a href="https://www.twitch.tv/newgameplusok" target="_blank">
-        <img src="/Images/canal4.JPG" alt="canal recomendado 4"> 
-    </a>
-    <a href="https://www.twitch.tv/zackrawrr" target="_blank">
-
-        <img src="/Images/canal5.JPG" alt="canal recomendado 5" > 
-    </a>
-    
-   </div>
+   
 
 
 
@@ -150,57 +141,51 @@
     <script src="/script/home.js"> </script>
 
 
-    <script type="text/javascript">
-        new Twitch.Player("twitch-embed", {
-          channel: "karigamerzz"
-        });
-      </script>
-
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-
-<script type="text/javascript">
-    new Twitch.Player("twitch-embed", {
-      channel: "karigamerzz"
+  <!-- Load the Twitch embed script -->
+  <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    
+  <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+  <script type="text/javascript">
+    new Twitch.Player("video", {
+      channel: "baldu",
+      autoplay: false
     });
   </script>
 
+   <!-- Load the Twitch embed script -->
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
-
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
 <script type="text/javascript">
-    new Twitch.Player("twitch-embed", {
-      channel: "karigamerzz"
-    });
-  </script>
+  new Twitch.Player("video-2", {
+    channel: "massii_ez",
+    autoplay: false
 
+  });
+</script>
+
+<!-- Load the Twitch embed script -->
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
-
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
 <script type="text/javascript">
-    new Twitch.Player("twitch-embed", {
-      channel: "karigamerzz"
-    });
-  </script>
+  new Twitch.Player("video-3", {
+    channel: "sandralife",
+    autoplay: false
+  });
+</script>
 
+
+<!-- Load the Twitch embed script -->
 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
 
-
+<!-- Create a Twitch.Player object. This will render within the placeholder div -->
 <script type="text/javascript">
-    new Twitch.Player("twitch-embed", {
-      channel: "karigamerzz"
-    });
-  </script>
-
-<script src="https://player.twitch.tv/js/embed/v1.js"></script>
-
-
-<script type="text/javascript">
-    new Twitch.Player("twitch-embed", {
-      channel: "karigamerzz"
-    });
-  </script>
-
+  new Twitch.Player("video-4", {
+    channel: "kyedae",
+    autoplay: false
+  });
+</script>
 
 
    

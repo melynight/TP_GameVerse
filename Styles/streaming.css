@@ -4,6 +4,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     background-image: url("/Images/Back-Rain-Pixeles.jpg");
     transition: opacity 1s ease;
+  
 }
 
 
@@ -34,9 +35,6 @@ body {
 
 }
 
-.video-1{
-    border: 2px;
-}
 
 
 .contenedor-canales-recomendados{
@@ -45,8 +43,11 @@ body {
     background: #efeff1;
     width: 16rem;
     border-radius: 16px;
-    margin: 7rem 7em 0 auto;
     flex-direction: column;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
 
 }
 
@@ -63,6 +64,22 @@ body {
     font-family: 'Press Start 2P';
     line-height: 24px;
     color: #20003f;
+}
+
+.contenedor-streams {
+    width: 72%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+    grid-gap: 30px;
+    align-content: space-evenly;
+    justify-items: center;
+}
+
+
+#video {
+    max-width: 500px;
+  
 }
 
 
