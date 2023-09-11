@@ -99,7 +99,7 @@
       
      </div>
 
-    <div id="video"></div>
+    <div id="video-1"> </div>
     <div id="video-2"></div>
     <div id="video-3"></div>
     <div id="video-4"></div>
@@ -146,9 +146,11 @@
     
   <!-- Create a Twitch.Player object. This will render within the placeholder div -->
   <script type="text/javascript">
-    new Twitch.Player("video", {
+    new Twitch.Player("video-1", {
       channel: "baldu",
-      autoplay: false
+      autoplay: false,
+      width: "100%",
+    height: "100%"
     });
   </script>
 
@@ -159,7 +161,9 @@
 <script type="text/javascript">
   new Twitch.Player("video-2", {
     channel: "massii_ez",
-    autoplay: false
+    autoplay: false,
+    width: "100%",
+    height: "100%"
 
   });
 </script>
@@ -171,7 +175,9 @@
 <script type="text/javascript">
   new Twitch.Player("video-3", {
     channel: "sandralife",
-    autoplay: false
+    autoplay: false,
+    width: "100%",
+    height: "100%"
   });
 </script>
 
@@ -183,7 +189,9 @@
 <script type="text/javascript">
   new Twitch.Player("video-4", {
     channel: "kyedae",
-    autoplay: false
+    autoplay: false,
+    width: "100%",
+    height: "100%"
   });
 </script>
 
