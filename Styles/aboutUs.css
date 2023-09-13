@@ -21,6 +21,8 @@ body {
     flex-direction: column;
     height: 400px;
     background: white;
+    border-radius: 8%;
+    margin: 30px;
 }
 
 
