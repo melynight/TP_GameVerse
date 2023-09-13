@@ -3,10 +3,17 @@
     <head>
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos</title>
-    <link rel="stylesheet" href="/Styles/estilos.css">
-</head>
+        <title>Contactanos</title>
+    <link rel="stylesheet" href="/Styles/ESTILO2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
 <body>
+    
     <header>
         <nav class="contenedor-navBar">
             <ul class="contenedor-links">
@@ -40,64 +47,84 @@
                             Streaming</a></li>
                 </ul>
             </div>
-            
+            <!-- <div class="contenedor-img-responsive"> logo principal no aprece enquerie de 965
+                <img class="logo" src="/Images/LogoPrincipal.png ">
+            </div> -->
         </nav>
     </header>
-<section class="form-caja"> 
-    <section class="contact_info">
-        <section class="info_title">
+    
+
+    
+         
+    <div class="form-caja"> 
+        <div class="contact_info">
+            <div class="info_title">
         
             <h2>INFORMACION <br> DE CONTACTO </h2>
-        </section>
-        <section class="info_items">
+        </div>
+        <div class="info_items">
             <p><a class="CAMBIO1" href="mailto:info@gameverse.com">info@gameverse.com</a></p>
             <p class="TELEFONO_CONTACTO">+54 911 566666</p>  
-        </section>
-    </section>
-
-    <form action="" class="form_contact">
-        <h2 class="form_title">Dejanos Tu mensaje</h2>
-        <div class="user_info">
-
-            <label for="name">Nombre</label>
-            <input name="nombre" id="name" type="text" class="form_input" >
-        
-            <label for="email">Email</label>
-            <input name="email" id="email" type="email" class="form_input" >
-    
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" class="form_input form_imput--message" ></textarea>
-    
-            <input type="submit" value="Enviar" class="form_enviar">
         </div>
+    </div>
+
+    <form class="form_contact" id="formulario" action="" method="">
+        
+        <h2 class="form_title">Dejanos Tu mensaje</h2>
+        
+            <div class="user_info">
+             <label for="name">Nombre</label>
+                <input name="name" id="name" type="text" class="form_input" >
+                
+            </div>
+            <div class="user_info">
+                
+                <label for="email">Email</label>
+                
+                <input name="email" id="email" type="email" class="form_input" >
+                
+            </div>
+            <div class="user_info">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" class="form_input form_imput--message" ></textarea>
+            </div>
+
+            <button type="submit" value="Enviar" class="form_enviar" id="btnSend">Enviar</button>
+            
+   
     </form>
     
     </div>
-</section>
-
-<section>
-<div class="container-footer">
-<footer>
-    <div class="logo-footer">
-    <img class="img-footer" src="/Images/Lgameverse.png" alt="GameVerse Logo">
     </div>
-    <div class="redes-footer">
-        <a href=""><img class="icon-redes-footer" src="/Images/facebook-logo.png" alt="Facebook-log"> </a>
-        <a href=""><img class="icon-redes-footer" src="/Images/instagram-logo.png" alt="Instagram-logo"></a>
-        <a href=""><img class="icon-redes-footer" src="/Images/twitch-logo.png" alt="Twitch-logo"></a>
 
-     
+ 
+
+    <footer>
+    <div class="contenedor-footer">
+        <div class="contenedor-redes">
+            <h2 class="contenedor-redes-titulo">Seguinos en nuestras redes sociales</h2>
+            <div class="contenedor-logos">
+                <a href=""><img class="logos" src="/Images/facebook-logo.png" alt="Facebook-log"> </a>
+                <a href=""><img class="logos" src="/Images/instagram-logo.png" alt="Instagram-logo"></a>
+                <a href=""><img class="logos" src="/Images/twitch-logo.png" alt="Twitch-logo"></a>
+            </div>
+        </div>
+        <div class="contenedor-img-derechos">
+            <img class="img-footer" src="/Images/LogoPrincipal.png" alt="">
+        </div>
+        <hr>
+        <div class="contenedor-derechos">
+            
+            <div class="contenedor-parrafo-derechos">
+                <p class="p-footer">© 2023 GameVerse S.A.  All rights reserved. Please follow our legal data privacy.
+                </p>
+            </div>
+        </div>
+        <hr>
     </div>
-<hr>
-<h4> © 2023 GameVerse S.A.  All rights reserved. Please follow our legal data privacy.</h4>
-
 </footer>
-</section>
-</div>
-    
 
-
-
-</body>
+<script src="/contact.js"></script>
+<script src="/script/home.js"></script>
 
 </html>
