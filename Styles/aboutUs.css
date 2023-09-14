@@ -19,9 +19,9 @@ body {
     align-items: center;
     width: 300px;
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     background: white;
-    border-radius: 8%;
+    border-radius: 2%;
     margin: 30px;
 }
 
@@ -34,10 +34,14 @@ body {
 }
 
 .info-texto{
-    width: 50%;
-    background: violet;
-    margin: 0 auto;
+    width: 83%;
+    background: #f4c9f9;
+    margin: -24px;
     text-align: center;
+    border-radius: 20px;
+    padding: 14px;
+    font-size: 18px;
+    line-height: 23px;
 
 }
 
