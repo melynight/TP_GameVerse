@@ -1,7 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
 
-/*nav bar */
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url("/Images/Back-Rain-Pixeles.jpg");
+    transition: opacity 1s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-------------Variables-------------*/
+a {
+    --enlaces--: #add;
+}
+
+h1 {
+    --titulo_principal--: #fff;
+    --titulo_catalogo--: #ff4aab;
+}
+
+h2 {
+    --subtitulo_catalogo--: #5654d3;
+}
+
+:hover {
+    --hover_enlaces--: #5654d3;
+    ;
+}
+
+/*-------------------Header--------------------*/
+
 .navbar-responsive {
     display: none;
 }
@@ -64,23 +95,7 @@
     outline: none;
     border: none
 }
-
-/*fin del navbar */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
-    
-    min-height: 100vh;
-    width: 100%;
-    font-family: 'Press Start 2P', cursive;
-    position: relative;
-        
-}
-
+/*mio*/
 .CAMBIO1{ color: #fff; } /* CSS link*/
 .CAMBIO1:hover { color: #e5b2ca; } /* CSS link */
 
@@ -89,10 +104,13 @@ body{
     outline: none;
 
 }
-.form-caja{
+
+
+.form-caja {
     width: 65.75em;
     height: 33.12em;
-    margin: 50px auto;
+   
+    margin: 3rem auto;
     display: flex;
     background: #fff;
     border-radius: 16px;
@@ -133,16 +151,21 @@ body{
     position: relative;
     z-index: 2;  /*si no ponia esto se veian debajo las palabras*/
     color:#fff;
+    font-size: 20px;
+    text-align: center;
 }
 
 .info_title{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
+    font-size: 20px;
 }
 
 .TELEFONO_CONTACTO{
-    margin-top: 20px;
+    margin-top: 10px;
+    
 }
 form.form_contact{
+    margin: 0;
     width: 62%;
     padding: 60px 50px 10px ;
 
@@ -152,7 +175,7 @@ form.form_contact h2{
     font-weight: 600;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 65px;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     
     
 }
@@ -165,6 +188,7 @@ form.form_contact .user_info {
 form.form_contact label{
     font-weight: 600;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 form.form_contact input {
@@ -172,7 +196,7 @@ form.form_contact input {
 
     
     border: none;
-    border-bottom: 2px solid #e5b2ca;
+    border-bottom: 2px solid #d0318b;
     margin-bottom: 20px;
     padding:  8px 0px 5px;
 
@@ -183,6 +207,7 @@ form.form_contact input {
 }
 
 form.form_contact textarea  {
+    height: 3rem;
     padding: 0.8px 1px 5px;
     margin-bottom: 10px;
     
@@ -196,78 +221,261 @@ form.form_contact textarea  {
     
 }
 
+#formulario button {
+    background: #e7ddd8;
+    border:1px solid #fd5f00;
+    margin-top: 10px;
+    border-radius: 2px;
+    color: #000000;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor:pointer;
+}
+#formulario button:hover {
+    background-color: #3d0278;
+    color: #ddd;
+}
+
 
 
 
 
   
-/*FOOTERRRRR*/
 
-.container-footer {
-    width: 100%;
-    padding: 40px 0;
-    background: #fff;
-    margin-top: 40px;
+
+
+/*----------Section-Contenido-general----------------*/
+
+.contenido-general {
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    /*Me pone la imagen y el texto al lado podria ser una transicion de imagenes*/
+}
+
+.contenedor-banner {
+    width: 50%;
+}
+
+.banner1 {
+    width: 100%;
+}
+
+.nuevo {
+    margin: 30px 0px;
+}
+
+.titulo-principal {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 3em;
+    color: var(--titulo_principal--);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+
+/*Footer*/
+
+footer {
+    margin-top: 30px;
+    background-color: #210736;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.contenedor-redes {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-redes-titulo {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 30px;
+    color: #ff4aab;
+    text-align: center;
+}
+
+.contenedor-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.logos {
+    margin: 30px 10px;
+    width: 50px;
+}
+
+hr {
+    background-color: #5654d3;
+    height: 1px;
+    width: 90%;
+    border: none;
+    margin: 0 auto;
+}
+
+.contenedor-derechos {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-img-derechos {
+    width: 20%;
+}
+
+.contenedor-parrafo-derechos {
+    width: 80%;
+}
+
+.img-footer {
+    width: 40%;
     
 }
 
-.container-footer footer {
-    max-width: 1200px;
-    margin: auto;
+.p-footer {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff4aab;
+    margin: 5px;
+    font-size: 1em;
 }
 
-.container-footer footer .logo-footer {
-    text-align: center;
 
+/*----------Animaciones----------*/
+
+
+@keyframes flashingTitulo {
+    0% {
+        color: #5654d3;
+    }
+
+    50% {
+        color: #5654d3;
+    }
+
+    75% {
+        color: #ff4aab;
+    }
+
+    100% {
+        color: #ff4aab;
+    }
 }
 
-.container-footer footer .logo-footer img {
-    width: 100px;
+/*Media QUeries*/
+/*965 menu hamburguesa
+*/
+ 
 
+@media screen and (max-width: 965px) {
+    body {
+        margin: 1rem;
+    }
+    
+    .contact_info {
+
+    font-size: 1rem;
+    width: 100%;
+    position: block;
+    height: 10rem;
 }
 
-.container-footer footer .redes-footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+form.form_contact{
+    width: auto;
+    
 }
 
-.container-footer footer .redes-footer .icon-redes-footer{
-    font-size: 20px;
-    margin: 20px;
-    background: #efefef;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 100%; 
-    color: #a2a2a2;
+    .form-caja{
+        
+        width: 100%;
+        height: 39rem;
+        margin: 1rem auto;
+        display: block;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+        
+    }
 
-}
+    .user_info {
+        width: 100%;
+    }
 
-.container-footer footer hr {
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: #7028e4;
-}
+    form.form_contact h2{
+      
+        width: 100%;
+        position: relative;
+        font-size: 2rem;
+        text-align: center center !important;
+        margin-bottom: 2rem;
+        
+    }
 
-.container-footer h4 {
-    text-align: center;
-    margin-top: 20px;
-    color: #453a94;
-    font-weight: 500px;
-    font-size: 10px;
-}
+    form.form_contact label{
+            font-size: 1.2rem;
+            margin-bottom: 0.2rem;
+            
+    }
+    
+        
+    form.form_contact input {
+            
+            
+            font-size: 0.8rem;
+            
+    }
 
-/*@media(max-width:1200)
-@media(max-width:1200)
-@media(max-width:1200)
-@media(max-width:1200)]*/
+    .form_contact input{
+        padding: 10rem 10rem ;
+    }
+        
+    form.form_contact textarea  {
+           
+            font-size: 0.8rem;
+            
+            padding: 0.8px 10px 5px;
+            margin-bottom: 10px;
+            
+            
+            font-weight: 400;
+            
+            
+            border:2px solid #e5b2ca; 
+            
+    }    
+    .container-footer {
+        
+        background:transparent ;
+        
+        
+    }
 
-@media (max-width:576px) { 
+    .redes-footer{
+        background: #fff;
+    }
+
+    .container-footer h4 {
+        
+        color: #fff;
+        font-size: 0.8rem;
+        
+    }
+
     .contenedor-navBar {
         display: none;
     }
@@ -279,9 +487,9 @@ form.form_contact textarea  {
     }
 
     .menu-responsive {
-        width: 30px;
-        margin-top: 20px;
-        margin-left: 10px;
+        width: 2rem;
+        margin-top: 1.2rem;
+        margin-left: 0.8rem;
         top: 3px;
 
     }
@@ -337,92 +545,29 @@ form.form_contact textarea  {
     .contenedor-links-ul-li-a {
         display: block;
     }
-    
- /*esto es lo otro que no es el menu hamburguesa copiado de juan*/
 
-    .body{
-        width: 50%;
-        min-height: 450px;
-    }
-    
-    .contact_info {
-
-    font-size: 8px;
-    width: 100%;
-    position: relative;
-    height: 30%;
-
-    
-    
-
-    background-image: url(/Images/pistolero1.jpg); 
-    background-size: cover;   
-    background-position: center; /*centrar la imagen del pistolero */}
-
-    .form_contact{
-        width: 100%;
-        
-    }
-
-    .form-caja{
-        
-        width: 100%;
-        height: 35em;
-        margin:  auto;
-        display: block;
-        background: #fff;
-        border-radius: 16px;
+    .p-footer {
+        font-size: 0.8em;
         overflow: hidden;
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        
     }
 
-
-
-    form.form_contact h2{
-      
-        width: 100%;
-        position: relative;
-        
-        font-size: 20px;
-        text-align: center;
-        
-    }
-
-    form.form_contact label{
-            font-size: 10px;
-            margin-bottom: 10px;
-    }
-        
-    form.form_contact input {
-            width: 100%;
-            font-size: 8px;
-            
-    }
-        
-    form.form_contact textarea  {
-            
-            font-size: 8px;
-            
-            
-    }    
-    .container-footer {
-        
-        background:transparent ;
-        
-        
-    }
-
-    .redes-footer{
-        background: #fff;
-    }
-
-    .container-footer h4 {
-        
-        color: #fff;
-        font-size: 10px;
-        
+    .contenido-general {
+        margin: 50px;
     }
 
     
+
+    .contenedor-compra {
+        width: 300px;
+    }
+
+    
+
+    .contenedor-img-derechos {
+        width: 30%;
+    }
+
+    .contenedor-parrafo-derechos {
+        width: 70%;
+    }
 }
