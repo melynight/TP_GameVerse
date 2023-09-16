@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Bebas Neue' , Times, serif;
     background-image: url("/Images/Back-Rain-Pixeles.jpg");
     transition: opacity 1s ease;
   
@@ -75,7 +75,7 @@ body {
 }
 
 
-#video-1, #video-2, #video-3, #video-4, #video-5, #video-6, #video-7, #video-8{
+#video-1, #video-2, #video-3, #video-4{
     width: 400px;
     height: 200px;
     border: radius 25px; ;
