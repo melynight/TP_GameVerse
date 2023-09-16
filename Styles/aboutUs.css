@@ -3,6 +3,17 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
+@media screen and (max-width: 965px) {
+
+
+
+     .logo {
+       display: none;
+    }
+
+
+}
+
 
 .contenedor-about-us{
     display: flex;
@@ -64,8 +75,9 @@ body {
 }
 
 .info-img h4{
-    width: 165px;
+    width: 200px;
     margin-top: 10px;
-    height: 80px;
+    height: 90px;
+    font-size: 1.9rem;
 }
 
