@@ -28,6 +28,7 @@ body {
 
 .info-img{
     position: relative;
+    box-sizing: border-box;
     width: 100px;
     top: -50px;
     text-align: center;
@@ -46,7 +47,8 @@ body {
 }
 
 .info img{
-    position: relative;
-    width: 100px;
+    width: 105px;
+    height: 110px;
     border-radius: 50%;
+    object-fit: cover;
 }
