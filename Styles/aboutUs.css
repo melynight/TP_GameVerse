@@ -1,6 +1,17 @@
 body {
-    background-image: linear-gradient(to top, #e5b2ca 0%, #47028e 100%);
+    background-image: linear-gradient(to top, #e5b2ca 30%, #3f0677 70%);
     font-family: 'Bebas Neue', sans-serif;
+}
+
+@media screen and (max-width: 965px) {
+
+
+
+     .logo {
+       display: none;
+    }
+
+
 }
 
 
@@ -16,13 +27,20 @@ body {
 
 .info{
     display: flex;
-    align-items: center;
     width: 300px;
     flex-direction: column;
     height: 500px;
-    background: white;
+    border: white solid;
     border-radius: 2%;
     margin: 30px;
+    background: linear-gradient(#ecaaff, #571f83);
+    align-items: center;
+}
+
+.info:hover{
+
+    background: linear-gradient(#571f83, #ecaaff);
+
 }
 
 
@@ -32,19 +50,23 @@ body {
     width: 100px;
     top: -50px;
     text-align: center;
+    display: flex;
+    color: black;
+    text-shadow: 2px 2px #e0affe;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info-texto{
-    width: 83%;
-    background: #f4c9f9;
-    margin: -24px;
+    width: 100%;
     text-align: center;
-    border-radius: 20px;
-    padding: 14px;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 1.2rem;
+    line-height: 24px;
+    color: black;
+    margin-top: -77px;
 
 }
+
 
 .info img{
     width: 105px;
@@ -52,3 +74,11 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+.info-img h4{
+    width: 200px;
+    margin-top: 10px;
+    height: 90px;
+    font-size: 1.9rem;
+}
+
