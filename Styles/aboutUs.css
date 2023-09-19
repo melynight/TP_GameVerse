@@ -3,19 +3,7 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-@media screen and (max-width: 965px) {
-
-
-
-     .logo {
-       display: none;
-    }
-
-
-}
-
-
-.contenedor-about-us{
+.contenedor-about-us {
     display: flex;
     width: 100%;
     margin: 7rem 0 11rem 0;
@@ -25,7 +13,7 @@ body {
 }
 
 
-.info{
+.info {
     display: flex;
     width: 300px;
     flex-direction: column;
@@ -37,27 +25,28 @@ body {
     align-items: center;
 }
 
-.info:hover{
+.info:hover {
 
     background: linear-gradient(#571f83, #ecaaff);
 
 }
 
 
-.info-img{
+.info-img {
     position: relative;
     box-sizing: border-box;
     width: 100px;
     top: -50px;
     text-align: center;
     display: flex;
-    color: black;
-    text-shadow: 2px 2px #e0affe;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #000000;
     flex-direction: column;
     align-items: center;
 }
 
-.info-texto{
+.info-texto {
     width: 100%;
     text-align: center;
     font-size: 1.2rem;
@@ -68,17 +57,17 @@ body {
 }
 
 
-.info img{
+.info img {
     width: 105px;
     height: 110px;
     border-radius: 50%;
     object-fit: cover;
+    border: #fff 3px solid;
 }
 
-.info-img h4{
+.info-img h4 {
     width: 200px;
     margin-top: 10px;
     height: 90px;
     font-size: 1.9rem;
 }
-
