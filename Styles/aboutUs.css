@@ -34,14 +34,24 @@ body {
 
 .info-img {
     position: relative;
+<<<<<<< HEAD
+    width: 250px;
+=======
     box-sizing: border-box;
     width: 100px;
+>>>>>>> f3847e4a6a30a95f43e6a2c6eef2058f078dfc59
     top: -50px;
     text-align: center;
     display: flex;
+<<<<<<< HEAD
     color: #fff;
     letter-spacing: 2px;
     text-shadow: 2px 2px #000000;
+=======
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+>>>>>>> b50f563696181452abb765793cf6bbc83d71d633
     flex-direction: column;
     align-items: center;
 }

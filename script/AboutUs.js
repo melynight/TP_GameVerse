@@ -8,7 +8,6 @@ $(document).ready(function() {
         function() {
             // Dentro de esta función, 'this' se refiere al elemento .info-img actual
             $(this).find("h4").css("font-size", "2.1rem");
-           
             $(this).find("h4").css("transition", "all 1s");
         },
         function() {
