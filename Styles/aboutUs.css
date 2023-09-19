@@ -46,12 +46,13 @@ body {
 
 .info-img{
     position: relative;
-    width: 100px;
+    width: 250px;
     top: -50px;
     text-align: center;
     display: flex;
-    color: black;
-    text-shadow: 2px 2px #e0affe;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
     flex-direction: column;
     align-items: center;
 }
