@@ -46,7 +46,12 @@ body {
 
 .info-img{
     position: relative;
+<<<<<<< HEAD
     width: 250px;
+=======
+    box-sizing: border-box;
+    width: 100px;
+>>>>>>> f3847e4a6a30a95f43e6a2c6eef2058f078dfc59
     top: -50px;
     text-align: center;
     display: flex;
@@ -69,10 +74,10 @@ body {
 
 
 .info img{
-    position: relative;
-    width: 100px;
+    width: 105px;
+    height: 110px;
     border-radius: 50%;
-    border: white solid;
+    object-fit: cover;
 }
 
 .info-img h4{
