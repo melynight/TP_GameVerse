@@ -147,6 +147,9 @@ h2 {
     top: 0;
     bottom: 0;
     margin: auto;
+    background: #5654d3;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 
@@ -190,7 +193,6 @@ h2 {
 .btn-comprar {
     padding: 15px;
     font-size: 0.8rem;
-    margin-top: 30px;
     font-family: 'Press Start 2P', cursive;
     border: none;
     transition: all 1s;
@@ -203,13 +205,32 @@ h2 {
 
 .nombre-juego {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 10px;
     margin-top: 15px;
     text-shadow: 2px 2px deeppink;
     -webkit-text-stroke: 0.5px black;
     text-align: center;
 
+}
+
+.nombre {
+    font-size: 1rem;
+    line-height: 35px;
+    text-align: center;
+    font-family: 'Press Start 2P';
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-shadow:
+        0 0 7px #ff4aab,
+        0 0 8px #ff4aab,
+        0 0 10px #ff4aab,
+        0 0 15px #ff4aab,
+        0 0 18px #ff4aab,
+        0 0 20px #ff4aab,
+        0 0 22px #ff4aab,
+        0 0 25px #ff4aab;
 }
 
 /*Footer*/
