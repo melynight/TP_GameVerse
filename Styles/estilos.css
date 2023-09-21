@@ -183,6 +183,7 @@ form.form_contact h2{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 65px;
     margin-bottom: 30px;
+    letter-spacing: 2px;
     
     
 }
@@ -565,12 +566,8 @@ hr {
 /*responsive del formulario p/ visualización vertical*/
 
 @media screen and (max-width: 965px) {
-    body {
-        margin: 1rem;
-    }
     
     .contact_info {
-
     font-size: 1rem;
     width: 100%;
     position: block;
@@ -579,12 +576,11 @@ hr {
 
 form.form_contact{
     width: auto;
-    
 }
 
     .form-caja{
         
-        width: 100%;
+        width: 90%;
         height: 39rem;
         margin: 1rem auto;
         display: block;
