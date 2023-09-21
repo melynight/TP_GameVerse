@@ -242,7 +242,7 @@ form.form_contact textarea  {
     display: block;
     width: 100%;
     padding: 10px;
-    
+
     font-size: 18px;
     font-family: 'Bebas Neue', sans-serif;
     cursor:pointer;
@@ -290,6 +290,51 @@ form.form_contact textarea  {
     color: var(--titulo_principal--);
     font-family: 'Bebas Neue', sans-serif;
 }
+
+
+/* Estilo GENERAL DE LA VENTANA EXITO LUEGO DE ENVIAR FORMUlario */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  /* contenido de la ventana */
+  .popup-content {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* BOTON CERRAR */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  /* MENSAJE EXITOSO */
+  .popup p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 
 
 /*Footer*/
