@@ -56,7 +56,7 @@
                 <p class="TELEFONO_CONTACTO">+54 911 566666</p>  
             </div>
         </div>
-        <form class="form_contact" id="formulario" action="" method="">
+        <form class="form_contact" id="formulario"  onsubmit="return validar(event)">
             <h2 class="form_title">Dejanos Tu mensaje</h2>
             <div class="user_info">
                 <label for="name">Nombre</label>
@@ -69,7 +69,12 @@
             <button type="submit" value="Enviar" class="form_enviar" id="btnSend">Enviar</button>
         </form>
     </div>
-
+    <div id="exitoPopup" class="popup">
+        <div class="popup-content">
+          <span class="close" onclick="cerrarPopup()">X</span>
+          <p>Enviado con éxito</p>
+        </div>
+    </div>
     <footer>
         <div class="contenedor-footer">
             <div class="contenedor-redes">
