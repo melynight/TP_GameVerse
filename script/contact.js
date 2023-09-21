@@ -1,41 +1,44 @@
-const form = document.querySelector('#formulario');
+function validar(event) {
+    event.preventDefault(); 
 
-const nombre = form.name 
+    let todo_correcto = true;
 
-const correo = form.email 
+    const nombre = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('message').value;
 
-const mensaje = form.message
-
-let errors = document.querySelector('.errors') 
-
-form.addEventListener('submit', validar)
-
-function validar(e) {
-   
-    validarNombre(e)
-    validarCorreo(e)
-    validarMensaje(e)
-
-}
-
-function validarNombre(e) {
-    if (nombre.value == ''|| nombre.value == null) {
-    
-    alert("Falta un nombre")
-    e.preventDefault()
+    if (nombre === '') {
+        todo_correcto = false;
     }
+
+    if (email === '' || !validarEmail(email)) {
+        todo_correcto = false;
+    }
+
+    if (mensaje === '') {
+        todo_correcto = false;
+    }
+
+    if (!todo_correcto) {
+        alert('Puede que algunos campos esten vacios');
+    } else {
+        
+        mostrarPopup();
+    }
+
+    return todo_correcto;
 }
 
-function validarCorreo(e) {
-    if (correo.value == ''|| correo.value == null) {
-    alert("ingrese mail")
-     e.preventDefault() 
-  }
+
+function validarEmail(email) {
+    const expresion_regular = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return expresion_regular.test(email);
 }
-  
-function validarMensaje(e) {
-    if (mensaje.value == ''|| mensaje.value == null) {
-    alert("ingrese un mensaje")
-     e.preventDefault() 
-  }
+
+function mostrarPopup() {
+    document.getElementById('exitoPopup').style.display = 'block';
+}
+
+function cerrarPopup() {
+    document.getElementById('exitoPopup').style.display = 'none';
 }
