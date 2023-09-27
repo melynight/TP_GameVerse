@@ -6,6 +6,7 @@ function validar(event) {
     const nombre = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const mensaje = document.getElementById('message').value;
+    const formulario = document.querySelector(".form_contact");
 
     if (nombre === '') {
         todo_correcto = false;
@@ -24,6 +25,8 @@ function validar(event) {
     } else {
         
         mostrarPopup();
+        formulario.reset();
+
     }
 
     return todo_correcto;
@@ -41,4 +44,5 @@ function mostrarPopup() {
 
 function cerrarPopup() {
     document.getElementById('exitoPopup').style.display = 'none';
+
 }

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8"> 
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
     <link rel="stylesheet" href="/Styles/estilos.css">
@@ -9,24 +10,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <header>
         <nav class="contenedor-navBar">
             <ul class="contenedor-links">
                 <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Index.html"> Home</a></li>
-                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/sobreNosotros.html">Nosotros</a></li>
-                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/contacto.html">Contacto</a></li>
-                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/Streaming.html">Streaming</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/Streaming.html">
+                        Streaming</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/sobreNosotros.html">
+                        Nosotros</a></li>
+                <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Pages/formulario_contacto.html">
+                        Contacto</a></li>
+
             </ul>
             <div class="contenedor-img animate__animated animate__pulse">
-                <img class="logo" src="/Images/LogoPrincipal.png">
+                <img class="logo" src="/Images/LogoPrincipal.png ">
             </div>
             <ul class="contenedor-registro">
-                <li class="contenedor-registro-ul-li"><a class="contenedor-registro-ul-li-a" href="">Registrarse</a></li>
-                <li class="contenedor-registro-ul-li"><a class="contenedor-registro-ul-li-a" href="">Login</a></li>
+                <li class="contenedor-registro-ul-li"> <a class="contenedor-registro-ul-li-a" href="">Registrarse</a>
+                </li>
+                <li class="contenedor-registro-ul-li"> <a class="contenedor-registro-ul-li-a" href="">Login</a></li>
             </ul>
         </nav>
         <nav class="navbar-responsive">
@@ -36,31 +44,35 @@
             <div class="lateral-menu">
                 <ul class="contenedor-links">
                     <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Home</a></li>
-                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/contacto.html">Nosotros</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Streaming.html">
+                            Streaming</a></li>
+                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a"
+                            href="/contacto.html">Nosotros</a></li>
                     <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href=""> Contacto</a></li>
-                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="/Streaming.html">Streaming</a></li>
-                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="">Registrarse</a></li>
-                    <li class="contenedor-links-ul-li"><a class="contenedor-links-ul-li-a" href="">Login</a></li>
+
+                    <li class="contenedor-links-ul-li"> <a class="contenedor-links-ul-li-a" href="">Registrarse</a>
+                    </li>
+                    <li class="contenedor-links-ul-li"> <a class="contenedor-links-ul-li-a" href="">Login</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <div class="form-caja"> 
+    <div class="form-caja">
         <div class="contact_info">
             <div class="info_title">
                 <h2>INFORMACION <br> DE CONTACTO </h2>
             </div>
             <div class="info_items">
                 <p><a class="CAMBIO1" href="mailto:info@gameverse.com">info@gameverse.com</a></p>
-                <p class="TELEFONO_CONTACTO">+54 911 566666</p>  
+                <p class="TELEFONO_CONTACTO">+54 911 566666</p>
             </div>
         </div>
-        <form class="form_contact" id="formulario"  onsubmit="return validar(event)">
+        <form class="form_contact" id="formulario" onsubmit="return validar(event)">
             <h2 class="form_title">Dejanos Tu mensaje</h2>
             <div class="user_info">
                 <label for="name">Nombre</label>
-                <input name="name" id="name" type="text" class="form_input">
+                <input name="name" id="name" type="text" minlength="3" maxlength="12" class="form_input">
                 <label for="email">Email</label>
                 <input name="email" id="email" type="email" class="form_input">
                 <label for="message">Mensaje</label>
@@ -71,8 +83,8 @@
     </div>
     <div id="exitoPopup" class="popup">
         <div class="popup-content">
-          <span class="close" onclick="cerrarPopup()">X</span>
-          <p>Enviado con éxito</p>
+            <span class="close" onclick="cerrarPopup()">X</span>
+            <p>Enviado con éxito</p>
         </div>
     </div>
     <footer>
@@ -105,4 +117,5 @@
     <script src="/script/contact.js"></script>
     <script src="/script/home.js"></script>
 </body>
+
 </html>
