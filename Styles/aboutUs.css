@@ -75,3 +75,29 @@ body {
     height: 90px;
     font-size: 1.9rem;
 }
+
+.titulo-principal {
+    display: inline-block;
+    font-size: 3.4rem;
+    background: #e5b2ca;
+    padding: 2px 23px;
+    border-radius: 50px;
+    text-shadow: 2px 2px #000000;
+    color: white;
+    text-shadow: 2px 2px black;
+    letter-spacing: 2px;
+}
+
+
+@media (max-width:576px) {
+    .titulo-principal {
+        display: inline-block;
+        font-size: 2rem;
+        background: #e5b2ca;
+        padding: 2px 23px;
+        border-radius: 50px;
+        text-shadow: 2px 2px #000000;
+        color: white;
+        text-shadow: 2px 2px black;
+    } 
+}
