@@ -331,6 +331,10 @@ hr {
 /*Responsive Desing*/
 
 
+@media(max-width: 1200px){
+
+}
+
 @media (max-width:820px) {
     .contenedor-navBar {
         flex-direction: column;
@@ -354,6 +358,7 @@ hr {
         padding: 30px;
     }
 }
+
 
 @media (max-width:576px) {
     .contenedor-navBar {
@@ -390,7 +395,7 @@ hr {
 
     .subtitulo-contenedores {
         text-align: center;
-        margin: 100px auto;
+        margin: 0 auto;
         font-size: 1.7em;
     }
 

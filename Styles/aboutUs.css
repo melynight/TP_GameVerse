@@ -55,8 +55,12 @@ body {
     text-align: center;
     font-size: 1.2rem;
     line-height: 24px;
-    color: black;
+    color: #fff;
     margin-top: -77px;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
 
 }
 
@@ -74,6 +78,10 @@ body {
     margin-top: 10px;
     height: 90px;
     font-size: 1.9rem;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
 }
 
 .titulo-principal {
@@ -86,6 +94,10 @@ body {
     color: white;
     text-shadow: 2px 2px black;
     letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black,
+        1px 1px 5px black,
+        1px 1px 10px black,
+        1px 1px 15px black;
 }
 
 
@@ -99,5 +111,5 @@ body {
         text-shadow: 2px 2px #000000;
         color: white;
         text-shadow: 2px 2px black;
-    } 
+    }
 }
